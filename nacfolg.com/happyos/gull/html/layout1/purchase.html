@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+
+
+<!-- Mirrored from demos.ui-lib.com/gull/html/layout1/blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2020 19:22:21 GMT -->
+
+<!-- Mirrored from nacfolg.com/happyos/gull/html/layout1/branch_add.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Aug 2020 06:11:50 GMT -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nacfolg</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet" />
+    <link href="../../dist-assets/css/themes/lite-purple.min.css" rel="stylesheet" />
+    <link href="../../dist-assets/css/plugins/perfect-scrollbar.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../dist-assets/css/plugins/datatables.min.css" />
+</head>
+
+<body class="text-left">
+    <div class="app-admin-wrap layout-sidebar-large">
+        <div class="main-header">
+            <div class="logo">
+                <img src="../../dist-assets/images/logo.png" alt="">
+            </div>
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <i class="search-icon text-muted i-Magnifi-Glass1"></i>
+                </div>
+            </div>
+            <div style="margin: auto"></div>
+            <div class="header-part-right">
+                <!-- Full screen toggle -->
+                <i class="i-Full-Screen header-icon d-none d-sm-inline-block" data-fullscreen=""></i>
+                <!-- Notificaiton -->
+                <div class="dropdown">
+                    <div class="badge-top-container" role="button" id="dropdownNotification" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-primary">3</span>
+                        <i class="i-Bell text-muted header-icon"></i>
+                    </div>
+                    <!-- Notification dropdown -->
+                    <div class="dropdown-menu dropdown-menu-right notification-dropdown rtl-ps-none ps"
+                        aria-labelledby="dropdownNotification" data-perfect-scrollbar="" data-suppress-scroll-x="true">
+                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                        </div>
+                        <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                        </div>
+                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                        </div>
+                        <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Notificaiton End -->
+                <!-- User avatar dropdown -->
+                <div class="dropdown">
+                    <div class="user col align-self-end">
+                        <img src="../../dist-assets/images/faces/1.jpg" id="userDropdown" alt="" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <div class="dropdown-header">
+                                <i class="i-Lock-User mr-1"></i> User
+                            </div>
+                            <a class="dropdown-item">Account settings</a>
+                            <a class="dropdown-item">Billing history</a>
+                            <a class="dropdown-item" href="#">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-content-wrap">
+            <div class="sidebar-left open rtl-ps-none ps" data-perfect-scrollbar="" data-suppress-scroll-x="true">
+                <ul class="navigation-left">
+                    <li class="nav-item" data-item="Master"><a class="nav-item-hold" href="#"><i
+                                class="nav-icon i-Library"></i><span class="nav-text">Masters</span></a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item active" data-item="Purchase"><a class="nav-item-hold" href="#"><i
+                                class="nav-icon i-Library"></i><span class="nav-text">Sell</span></a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hold" href="Stock.html"><i class="nav-icon i-File-Horizontal-Text"></i><span
+                                class="nav-text">Stock</span></a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hold" href="purchase.html">
+                            <i class="nav-icon i-Gear"></i><span class="nav-text">Purchase</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                </ul>
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+            </div>
+            <div class="sidebar-left-secondary rtl-ps-none ps" data-perfect-scrollbar="" data-suppress-scroll-x="true">
+                <!-- Submenu Dashboards-->
+                <ul class="childNav" data-parent="Master" style="display: none;">
+                    <li class="nav-item"><a href="branch_List.html"><i class="nav-icon i-Error-404-Window"></i><span
+                                class="item-name">Branch</span></a></li>
+                    <li class="nav-item"><a href="Product_list.html"><i class="nav-icon i-File-Horizontal"></i><span
+                                class="item-name">Product</span></a></li>
+
+                    <li class="nav-item"><a href="vendor_list.html"><i class="nav-icon i-Male"></i><span
+                                class="item-name">Vendor</span></a></li>
+
+                </ul>
+                <ul class="childNav" data-parent="Purchase" style="display: block;">
+                    <li class="nav-item"><a href="Purchase_Request.html"><i
+                                class="nav-icon i-Error-404-Window"></i><span class="item-name">Sell
+                                Request</span></a></li>
+                    <li class="nav-item"><a href="Purchase_Approval.html"><i
+                                class="nav-icon i-File-Horizontal"></i><span class="item-name">Sell
+                                Approval</span></a></li>
+
+
+                </ul>
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+            </div>
+            <div class="sidebar-overlay"></div>
+        </div>
+        <!-- =============== Left side End ================-->
+        <div class="main-content-wrap sidenav-open d-flex flex-column">
+            <!-- content one request purchase and view request -->
+            <!-- content one request purchase and view request -->
+            <div class="main-content">
+
+
+
+
+
+                <div class="card text-left">
+
+
+                    <div class="card-header bg-transparent">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-md-6">
+                                <div class="breadcrumb">
+                                    <h1>Purchase</h1>
+                                    <ul>
+                                        <li><a href="#">Request</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-right col-md-6">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <form>
+                            <div class="row" style="padding-bottom:20px;border-bottom:1px solid #e8e8e8;">
+
+                                <div class="col-md-3">
+                                    <label for="firstName1">Product</label>
+                                    <select class="form-control">
+                                        <option>Select Product</option>
+                                        <option>Ltr</option>
+                                        <option>Box</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="firstName1">Unit</label>
+                                    <select class="form-control">
+                                        <option>Kg</option>
+                                        <option>Ltr</option>
+                                        <option>Box</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="firstName1">Needed Stock</label>
+                                    <input class="form-control" id="firstName1" type="text" placeholder="0">
+                                </div>
+
+                                <div class="col-md-2">
+                                    <button class="btn btn-primary" style="margin-top:25px;">Add</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="table-responsive" style="padding-top:20px;">
+                            <div id="multicolumn_ordering_table_wrapper"
+                                class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <table class="display table table-striped table-bordered dataTable no-footer"
+                                            id="multicolumn_ordering_table" style="width:100%" role="grid"
+                                            aria-describedby="multicolumn_ordering_table_info">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="sorting_asc" tabindex="0"
+                                                        aria-controls="multicolumn_ordering_table" rowspan="1"
+                                                        colspan="1" aria-sort="ascending"
+                                                        aria-label="#: activate to sort column descending"
+                                                        style="width: 78.6px;">#</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="multicolumn_ordering_table" rowspan="1"
+                                                        colspan="1"
+                                                        aria-label="Product ID: activate to sort column ascending"
+                                                        style="width: 218.6px;">Product ID</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="multicolumn_ordering_table" rowspan="1"
+                                                        colspan="1"
+                                                        aria-label="Product Name: activate to sort column ascending"
+                                                        style="width: 272.2px;">Product Name</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="multicolumn_ordering_table" rowspan="1"
+                                                        colspan="1" aria-label="Unit: activate to sort column ascending"
+                                                        style="width: 124.2px;">Unit</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="multicolumn_ordering_table" rowspan="1"
+                                                        colspan="1"
+                                                        aria-label="Needed Stock: activate to sort column ascending"
+                                                        style="width: 266.8px;">Needed Stock</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+
+                                                <tr role="row" class="odd">
+                                                    <td class="sorting_1 sorting_2">1</td>
+                                                    <td>P001</td>
+                                                    <td>Rice</td>
+                                                    <td>kg</td>
+                                                    <td>50</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class="sorting_1 sorting_2">2</td>
+                                                    <td>P002</td>
+                                                    <td>Dhall</td>
+                                                    <td>kg</td>
+                                                    <td>30</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <!-- second content of view branch requests -->
+            <div class="main-content">
+
+
+
+
+
+                <div class="card text-left">
+
+
+                    <div class="card-header bg-transparent">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-md-6">
+                                <div class="breadcrumb">
+                                    <h1>Purchase</h1>
+                                    <ul>
+                                        <li><a href="#">Approval</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-right col-md-6">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <div id="multicolumn_ordering_table_wrapper"
+                                class="dataTables_wrapper container-fluid dt-bootstrap4">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="dataTables_length" id="multicolumn_ordering_table_length">
+                                            <label>Show <select name="multicolumn_ordering_table_length"
+                                                    aria-controls="multicolumn_ordering_table"
+                                                    class="form-control form-control-sm">
+                                                    <option value="10">10</option>
+                                                    <option value="25">25</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                </select> entries</label></div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <div id="multicolumn_ordering_table_filter" class="dataTables_filter">
+                                            <label>Search:<input type="search" class="form-control form-control-sm"
+                                                    placeholder="" aria-controls="multicolumn_ordering_table"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <table class="display table table-striped table-bordered dataTable"
+                                            id="multicolumn_ordering_table" style="width:100%" role="grid"
+                                            aria-describedby="multicolumn_ordering_table_info">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="sorting_asc" tabindex="0"
+                                                        aria-controls="multicolumn_ordering_table" rowspan="1"
+                                                        colspan="1" aria-sort="ascending"
+                                                        aria-label="#: activate to sort column descending"
+                                                        style="width: 72.2px;">#</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="multicolumn_ordering_table" rowspan="1"
+                                                        colspan="1"
+                                                        aria-label="Branch ID: activate to sort column ascending"
+                                                        style="width: 195.4px;">Branch ID</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="multicolumn_ordering_table" rowspan="1"
+                                                        colspan="1"
+                                                        aria-label="Branch Name: activate to sort column ascending"
+                                                        style="width: 246.6px;">Branch Name</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="multicolumn_ordering_table" rowspan="1"
+                                                        colspan="1" aria-label="Date: activate to sort column ascending"
+                                                        style="width: 179.4px;">Date</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="multicolumn_ordering_table" rowspan="1"
+                                                        colspan="1" aria-label=": activate to sort column ascending"
+                                                        style="width: 266.8px;"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+
+                                                <tr role="row" class="odd">
+                                                    <td class="sorting_1 sorting_2">1</td>
+                                                    <td>B001</td>
+                                                    <td>Branch 1</td>
+                                                    <td>20/07/2020</td>
+                                                    <td>
+                                                        <a class="btn btn-primary text-white btn-rounded"
+                                                            href="Request_Approval.html" target="_blank">View
+                                                            Request</a>
+                                                    </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class="sorting_1 sorting_2">2</td>
+                                                    <td>B002</td>
+                                                    <td>Branch 2</td>
+                                                    <td>20/07/2020</td>
+                                                    <td>
+                                                        <a class="btn btn-primary text-white btn-rounded"
+                                                            href="Request_Approval.html" target="_blank">View
+                                                            Request</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td rowspan="1" colspan="1"></td>
+                                                    <td rowspan="1" colspan="1">Branch ID</td>
+                                                    <td rowspan="1" colspan="1">Branch Name</td>
+                                                    <td rowspan="1" colspan="1">Date</td>
+                                                    <td rowspan="1" colspan="1"></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-5">
+                                        <div class="dataTables_info" id="multicolumn_ordering_table_info" role="status"
+                                            aria-live="polite">Showing 1 to 2 of 2 entries</div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <div class="dataTables_paginate paging_simple_numbers"
+                                            id="multicolumn_ordering_table_paginate">
+                                            <ul class="pagination">
+                                                <li class="paginate_button page-item previous disabled"
+                                                    id="multicolumn_ordering_table_previous"><a href="#"
+                                                        aria-controls="multicolumn_ordering_table" data-dt-idx="0"
+                                                        tabindex="0" class="page-link">Previous</a></li>
+                                                <li class="paginate_button page-item active"><a href="#"
+                                                        aria-controls="multicolumn_ordering_table" data-dt-idx="1"
+                                                        tabindex="0" class="page-link">1</a></li>
+                                                <li class="paginate_button page-item next disabled"
+                                                    id="multicolumn_ordering_table_next"><a href="#"
+                                                        aria-controls="multicolumn_ordering_table" data-dt-idx="2"
+                                                        tabindex="0" class="page-link">Next</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div><!-- Footer Start -->
+    <div class="flex-grow-1"></div>
+
+    </div>
+
+    <script src="../../dist-assets/js/plugins/jquery-3.3.1.min.js"></script>
+    <script src="../../dist-assets/js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="../../dist-assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../../dist-assets/js/scripts/script.min.js"></script>
+    <script src="../../dist-assets/js/scripts/sidebar.large.script.min.js"></script>
+    <script src="../../dist-assets/js/plugins/datatables.min.js"></script>
+    <script src="../../dist-assets/js/scripts/datatables.script.min.js"></script>
+
+
+
+    <!-- Mirrored from demos.ui-lib.com/gull/html/layout1/blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2020 19:22:22 GMT -->
+
+    <!-- Mirrored from nacfolg.com/happyos/gull/html/layout1/Stock.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Aug 2020 06:12:16 GMT -->
+
+</body>
+
+</html>
